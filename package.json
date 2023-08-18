@@ -1,0 +1,47 @@
+{
+  "name": "@llllvvuu/kvconsole",
+  "packageManager": "pnpm@8.6.12",
+  "version": "0.1.0",
+  "description": "Like `console.log` but for in-place updating values.",
+  "keywords": [
+    "console.log",
+    "log",
+    "logger",
+    "logging"
+  ],
+  "homepage": "https://github.com/llllvvuu/kvconsole.log",
+  "bugs": "https://github.com/llllvvuu/kvconsole.log/issues",
+  "repository": "github:llllvvuu/kvconsole.log",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cjs/lib.cjs",
+  "types": "dist/cjs/lib.d.ts",
+  "module": "dist/esm/lib.mjs",
+  "bin": {
+    "kvconsole": "./dist/cjs/cli.cjs"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/lib.mjs",
+      "require": "./dist/cjs/lib.cjs"
+    }
+  },
+  "scripts": {
+    "build": "sh build.sh",
+    "prettier": "prettier --write .",
+    "prePublishOnly": "pnpm build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@llllvvuu",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "cross-fetch": "^4.0.0"
+  }
+}

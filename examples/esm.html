@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kvconsole Example</title>
+  </head>
+
+  <body>
+    <button id="logButton">Emit kvconsole.log</button>
+
+    <script type="module">
+      import { kvconsole } from "./node_modules/@llllvvuu/kvconsole/dist/esm/lib.mjs"
+      const button = document.getElementById("logButton")
+
+      button.addEventListener("click", () => {
+        kvconsole.log(
+          `random value ${Math.ceil(Math.random() * 5)}`,
+          Math.random(),
+        )
+      })
+    </script>
+  </body>
+</html>

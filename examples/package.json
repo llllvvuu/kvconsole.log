@@ -1,0 +1,12 @@
+{
+  "name": "@llllvvuu-kvconsole/examples",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@llllvvuu",
+  "license": "ISC",
+  "dependencies": {
+    "@llllvvuu/kvconsole": "file:.."
+  }
+}
