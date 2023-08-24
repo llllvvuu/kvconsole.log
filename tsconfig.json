@@ -4,6 +4,7 @@
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "declaration": true,
+    "declarationMap": true,
     "exactOptionalPropertyTypes": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
