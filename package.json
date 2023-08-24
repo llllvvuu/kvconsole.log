@@ -13,9 +13,7 @@
   "homepage": "https://github.com/llllvvuu/kvconsole.log",
   "bugs": "https://github.com/llllvvuu/kvconsole.log/issues",
   "repository": "github:llllvvuu/kvconsole.log",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist", "lib.ts", "cli.ts"],
   "main": "dist/cjs/lib.cjs",
   "types": "dist/cjs/lib.d.ts",
   "module": "dist/esm/lib.mjs",
@@ -43,6 +41,7 @@
   "devDependencies": {
     "@types/node": "^20.5.0",
     "prettier": "^3.0.2",
+    "rimraf": "^5.0.1",
     "typescript": "^5.1.6"
   }
 }

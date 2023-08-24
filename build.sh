@@ -1,5 +1,7 @@
 #!/bin/sh
 
+rimraf dist
+
 tsc -p tsconfig.esm.json
 tsc -p tsconfig.cjs.json
 
